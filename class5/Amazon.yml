@@ -1,0 +1,12 @@
+- name: install packages
+  dnf: # package manager introduced to latest version
+    name: httpd
+    state: latest
+
+- name: start 
+  service:
+    name: httpd
+    state: started
+
+ 
+  
